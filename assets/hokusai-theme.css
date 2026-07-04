@@ -1,0 +1,70 @@
+/* ============================================================
+   HOKUSAI — signature theme palette
+   葛飾北斎「富嶽三十六景」— ベロ藍（Prussian blue）× 和紙 × 朱印。
+   Deep Katsushika blue over washi cream, vermillion seal red,
+   ochre and seaweed green as category accents.
+   Drop the :root block into a project and reference --hk-* vars.
+   ============================================================ */
+
+:root{
+  /* ---- Core surfaces & text --------------------------------- */
+  --hk-paper:   #F2E7CE;  /* washi cream — page base            */
+  --hk-card:    #FBF5E6;  /* card background                    */
+  --hk-ink:     #1E3852;  /* deep prussian — primary text       */
+  --hk-muted:   #5E7185;  /* faded indigo — secondary text      */
+  --hk-hair:    #DFD2B2;  /* washi line — hairline borders      */
+
+  /* ---- Katsushika blues (the hero) --------------------------- */
+  --hk-blue-deep: #16324D;  /* 濃藍 — deepest wave               */
+  --hk-blue:      #235A8C;  /* ベロ藍 — primary accent, links     */
+  --hk-blue-mid:  #5B88AE;  /* 浅葱 — mid wave                   */
+  --hk-blue-pale: #C9DAE4;  /* 水浅葱 — pale wave / foam edge     */
+  --hk-foam:      #E9F1F6;  /* 波泡 — foam white                 */
+
+  /* ---- Accent & status --------------------------------------- */
+  --hk-accent:  #235A8C;  /* = --hk-blue                         */
+  --hk-vermil:  #B93A2B;  /* 朱 — seal red, negative ▼, breaking */
+  --hk-up:      #3D7A5D;  /* 海松緑 — positive ▲                 */
+  --hk-neutral: #8C99A6;  /* 鼠 — neutral                        */
+  --hk-gold:    #F4C86A;  /* 金 — eyebrow/kicker on deep blue    */
+
+  /* ---- Category accents (spine / tint / text) ---------------- */
+  --hk-cat1:      #235A8C;  /* ベロ藍  (e.g. AI)       */
+  --hk-cat1-tint: #DEE9F1;
+  --hk-cat1-text: #1E4A70;
+  --hk-cat2:      #B58435;  /* 黄土    (Property)      */
+  --hk-cat2-tint: #F3E8CD;
+  --hk-cat2-text: #7E5A14;
+  --hk-cat3:      #4E7E62;  /* 海松緑  (Family)        */
+  --hk-cat3-tint: #E2EDE3;
+  --hk-cat3-text: #35624A;
+
+  /* ---- Signature gradients ------------------------------------ */
+  /* Page wash: deep indigo sea (top) → washi paper (below).
+     The hero move: headers/mastheads live in the blue zone with
+     cream (#FBF5E6) text; content sits on washi with blue ink.  */
+  --hk-bg: linear-gradient(180deg,
+      #16324D 0, #1E4568 260px, #3A6B96 430px,
+      #8FB3CC 560px, #D9E4E0 700px, #F2E7CE 880px);
+  /* Wave-layer stripe (top bar / rules): foam → deep            */
+  --hk-wave: linear-gradient(180deg,
+      #FBF5E6 0 26%, #C9DAE4 26% 50%, #8FB3CC 50% 74%, #5B88AE 74% 100%);
+  /* Foam scallop (wave crest border, repeat-x, height ~16px):
+     radial-gradient(circle 9px at 10px 16px, #E9F1F6 96%, transparent 100%) 0 0/20px 16px repeat-x */
+
+  /* ---- Typography --------------------------------------------- */
+  --hk-serif: 'Shippori Mincho B1', Georgia, serif;      /* 見出し */
+  --hk-sans:  'Zen Kaku Gothic New', system-ui, sans-serif; /* 本文 */
+  --hk-mono:  'Zen Antique', 'IBM Plex Mono', monospace;  /* ラベル */
+}
+
+/* Font import (put once in <head>):
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Antique&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+   Signature details:
+   - 朱印 (hanko): small --hk-vermil square, cream kanji, writing-mode:vertical-rl
+   - Cards: --hk-card bg, 1px --hk-hair border, 4px left spine in category color,
+     small radius (5-6px, woodblock crispness), soft shadow rgba(30,56,82,.07)
+*/
