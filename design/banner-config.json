@@ -1,0 +1,10 @@
+{
+  "Width": 1280,
+  "Height": 340,
+  "Kicker": "POWER BI × CLAUDE CODE",
+  "Title": "Yuji Yamane",
+  "Tagline": "AI-Augmented BI Solutions Lead — Sydney, Australia",
+  "Hanko": "匠技",
+  "Install": "/plugin marketplace add yujiyamane/pbi-ai-skills",
+  "BannerOut": "..\\assets\\banner.svg"
+}
