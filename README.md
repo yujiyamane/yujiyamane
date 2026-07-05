@@ -10,7 +10,7 @@ I lead Power BI delivery at enterprise scale and build Claude Code skills that a
 
 | Project | What it is |
 |---|---|
-| [pbi-ai-skills](https://github.com/yujiyamane/pbi-ai-skills) | **The Power BI Skill Pack for Claude Code** — config-to-dashboard generation, TMDL/PBIP tooling, auto-documentation. 341 TDD tests. One-command install. |
+| [pbi-ai-skills](https://github.com/yujiyamane/pbi-ai-skills) | **The Power BI Skill Pack for Claude Code** — config-to-dashboard generation, TMDL/PBIP tooling, auto-documentation. 409 TDD tests. One-command install. |
 | [powerbi-claude-health](https://github.com/yujiyamane/powerbi-claude-health) | Healthcare KPI dashboard built with Claude Code — full prompt log included |
 | [git-session-handoff](https://github.com/yujiyamane/git-session-handoff) | Zero-overhead session continuity for Claude Code — deterministic flight recorder, state encoded in git commit bodies |
 
